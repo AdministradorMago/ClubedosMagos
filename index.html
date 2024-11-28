@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #bbbdbc;
+            padding: 10px;
+        }
+        header img {
+            max-width: 100px; /* Ajuste o tamanho do logo */
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 8px;
+            color: #000;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin: 0 20px;
+        }
+        .collaborators {
+            max-width: 200px;
+        }
+        .sponsors {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .sponsor {
+            height: 50px;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;"> 	<div style="display: flex; align-items: center;"> 
+		<img src="imagens\clube.png" alt="Logo" style="margin-right: 10px;"> 
+			<div> 
+				<h1>Clube dos Magos</h1> 
+				<h2>Cidade Feitiço: Catanduva</h2> 
+			</div> 
+		</div> 
+	</div>
+</header>
+
+<div class="container">
+    <nav>
+        <a href="#">Opção 1</a>
+        <a href="#">Opção 2</a>
+        <a href="#">Opção 3</a>
+        <a href="#">Opção 4</a>
+        <a href="#">Opção 5</a>
+        <a href="#">Opção 6</a>
+        <a href="#">Opção 7</a>
+        <a href="#">Opção 8</a>
+        <a href="#">Opção 9</a>
+        <a href="#">Opção 10</a>
+    </nav>
+    <div class="main-content">
+        <h3>Missão</h3>
+        <p>A missão da empresa é...</p>
+        <h3>Visão</h3>
+        <p>A visão da empresa é...</p>
+        <h3>Valores</h3>
+        <p>Os valores da empresa são...</p>
+    </div>
+    <aside class="collaborators">
+        <h3>Colaboradores PJ</h3>
+        <ul>
+            <li>Colaborador 1</li>
+            <li>Colaborador 2</li>
+            <li>Colaborador 3</li>
+        </ul>
+        <h3>Colaboradores PF</h3>
+        <ul>
+            <li>Colaborador A</li>
+            <li>Colaborador B</li>
+            <li>Colaborador C</li>
+        </ul>
+    </aside>
+</div>
+
+<div class="sponsors">
+    <div class="sponsor">Sponsor 1</div>
+    <div class="sponsor">Sponsor 2</div>
+    <div class="sponsor">Sponsor 3</div>
+    <div class="sponsor">Sponsor 4</div>
+    <div class="sponsor">Sponsor 5</div>
+    <div class="sponsor">Sponsor 6</div>
+    <div class="sponsor">Sponsor 7</div>
+    <div class="sponsor">Sponsor 8</div>
+    <div class="sponsor">Sponsor 9</div>
+    <div class="sponsor">Sponsor 10</div>
+</div>
+
+<footer>
+    <p>Todos os direitos reservados. Endereço: Rua Exemplo, 123 - Bairro, Cidade - CEP 00000-000</p>
+</footer>
+
+</body>
+</html>

@@ -12,13 +12,16 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
+            background-color: #E5E5E5; /* Neutro */
+            color: #2B4F60; /* Destaque */
         }
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #bbbdbc;
+            background-color: #704214; /* Primária */
             padding: 10px;
+            color: #D7C4A1; /* Secundária */
         }
         header img {
             max-width: 100px; /* Ajuste o tamanho do logo */
@@ -31,7 +34,14 @@
         nav a {
             text-decoration: none;
             padding: 8px;
-            color: #000;
+            color: #704214; /* Primária */
+            background-color: #D7C4A1; /* Secundária */
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        nav a:hover {
+            background-color: #8B3E2F; /* Apoio */
+            color: #FFFFFF;
         }
         .container {
             flex: 1;
@@ -43,8 +53,22 @@
             flex: 3;
             margin: 0 20px;
         }
+        .main-content h3 {
+            color: #704214; /* Primária */
+            border-bottom: 2px solid #2B4F60; /* Destaque */
+            padding-bottom: 5px;
+        }
         .collaborators {
             max-width: 200px;
+            background-color: #D7C4A1; /* Secundária */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .collaborators h3 {
+            color: #704214; /* Primária */
+        }
+        .collaborators ul {
+            padding-left: 20px;
         }
         .sponsors {
             display: grid;
@@ -54,43 +78,47 @@
         }
         .sponsor {
             height: 50px;
-            border: 1px dashed #ccc;
+            background-color: #704214; /* Primária */
+            color: #D7C4A1; /* Secundária */
+            border: 1px solid #2B4F60; /* Destaque */
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
             margin: 20px 0;
             font-size: 0.8em;
+            background-color: #2B4F60; /* Destaque */
+            color: #D7C4A1; /* Secundária */
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;"> 	<div style="display: flex; align-items: center;"> 
-		<img src="Imagens\clube.png" alt="Logo" style="margin-right: 10px;"> 
-			<div> 
-				<h1>Clube dos Magos</h1> 
-				<h2>Cidade Feitiço: Catanduva</h2> 
-			</div> 
-		</div> 
-	</div>
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="display: flex; align-items: center;"> 
+            <img src="Imagens/clube.png" alt="Logo" style="margin-right: 10px;"> 
+            <div> 
+                <h1>Clube dos Magos</h1> 
+                <h2>Cidade Feitiço: Catanduva</h2> 
+            </div> 
+        </div> 
+    </div>
 </header>
 
 <div class="container">
     <nav>
-        <a href="#">Opção 1</a>
-        <a href="#">Opção 2</a>
-        <a href="#">Opção 3</a>
-        <a href="#">Opção 4</a>
-        <a href="#">Opção 5</a>
-        <a href="#">Opção 6</a>
-        <a href="#">Opção 7</a>
-        <a href="#">Opção 8</a>
-        <a href="#">Opção 9</a>
-        <a href="#">Opção 10</a>
+        <a href="#">Linha do Tempo</a>
+        <a href="#">Personalidades</a>
+        <a href="#">Eventos</a>
+        <a href="#">Inaugurações</a>
+        <a href="#">Lugares Históricos</a>
+        <a href="#">Publicidade</a>
+        <a href="#">Entre em Contato</a>
     </nav>
     <div class="main-content">
         <h3>Missão</h3>
